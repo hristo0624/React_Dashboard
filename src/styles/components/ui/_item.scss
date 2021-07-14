@@ -1,0 +1,39 @@
+.item{
+	padding-bottom: 8px;
+	width: 100%;
+	display: block;
+	position: relative;
+	&:last-child{
+		padding-bottom: 8px;
+	}
+	&.mod-newelement{
+		padding-top: 8px;
+		margin-bottom: 8px;
+		.item-label{
+			padding-bottom: 8px;
+		}
+		.datasheetlist-element{
+			@include no-shadow;
+			background-color: $screenBackground;
+			border: 1px solid $inputText;
+		}
+	}
+	&.mod-invalid{
+		.datasheetdays{
+			outline: 1px solid $red;
+		}
+	}
+}
+.item-label{
+	color: $grey;
+	font-size: 0.75rem;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis; 
+	padding-bottom: 2px;
+}
+.item-label-validity{
+	color: $red;
+	padding-left: 4px;
+	font-weight: bold;
+}

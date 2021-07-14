@@ -1,0 +1,61 @@
+.checkbox{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: relative;
+}
+.checkbox-full{
+	position: relative;
+}
+.checkbox-input{
+	width: 16px;
+	height: 16px;
+	display:none;
+	text-overflow: ellipsis;
+	+.checkbox-description{
+		font-size: 0.75rem;
+		pointer-events: none;
+		.checkbox-overlay{
+			pointer-events: auto;
+			display:inline-block;
+			width:20px;
+			height:20px;
+			margin-right: 4px;
+			vertical-align:middle;
+			cursor:pointer;
+			border: 1px solid $grey;
+
+			.checkbox-overlay-text{
+				color: $black;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				font-size: 0.75rem;
+			}		
+		}
+	}
+	&:checked{
+		+.checkbox-description{
+			.checkbox-overlay{
+				border: none;
+				background-color: $buttonBackground;
+				.texticon{
+					cursor: pointer;
+					font-size: 0.5rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: relative;
+					width: 100%;
+					height: 100%;
+					padding-top: 2px;
+				}
+				.checkbox-overlay-text{
+					color: $white;
+				}
+			}
+		}
+	}
+}

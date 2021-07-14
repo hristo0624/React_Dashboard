@@ -1,0 +1,67 @@
+.datasheetlist-element{
+	padding: 8px;
+	padding-bottom: 0;	
+	margin-bottom: 16px;
+	background-color: $white;
+	position: relative;
+	@include all-sides-shadow;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&.draggable{
+		cursor: grab;
+		&.dragged{
+			background-color: $buttonSelected;
+			cursor: grabbing;
+			p{
+				color: $white;
+			}
+		}
+	}	
+	&.placeholder{
+		background-color: $buttonBackground;
+		p{
+			color: $white;
+		}
+	}
+}
+.datasheetlist-element-item{
+}
+
+.datasheetlist-element-buttonwrapper{
+	padding-bottom: 8px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	.button{
+		height: 32px;
+	}
+}
+.datasheetlist-element-remove{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+}
+.datasheetlist-element-icon-wrapper{
+	position: absolute;
+	top: -22px;
+	right: -18px;
+	cursor: pointer;
+	&::before{
+		content: '';
+		background-color: $white;
+		top: 25%;
+		left: 25%;
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		z-index: 0;
+	}
+	.texticon{		
+		color: $buttonBackground;
+		cursor: pointer;
+		font-size: 1.25rem;
+		z-index: 10;
+		position: relative;
+	}	
+}

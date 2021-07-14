@@ -1,0 +1,16 @@
+.datasheetreport{
+	padding: 8px;
+	margin-bottom: 16px;
+	background-color: $white;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include all-sides-shadow;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	.button{
+		height: 32px;
+	}
+}

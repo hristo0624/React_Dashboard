@@ -1,0 +1,29 @@
+.button{
+	display: block;
+	width: 48px;
+	background-color: $buttonBackground;
+	border: none;
+	height: 40px;
+	color: $white;
+	text-transform: uppercase;
+	font-size: 1rem;
+	@include shadow;
+	cursor: pointer;
+	font-family: 'SourceSansPro';
+	&.text{
+		width: auto;
+		min-width: 100%;
+		span{
+			padding-left: 8px;
+		}
+	}
+	&.mod-category{
+		margin-right: 8px;
+	}
+	&.mod-save{
+		background-color: $green;
+	}
+	&:hover{
+		background-color: $buttonSelected;
+	}
+}

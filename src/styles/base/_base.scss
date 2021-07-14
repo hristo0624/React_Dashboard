@@ -1,0 +1,33 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+body {
+	box-sizing: border-box;
+	overflow: hidden;
+	background: $appBackground;
+	position: relative;
+	height: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+#root {
+	height: 100%;
+	position: relative;
+}
+
+.wrapper {
+	height: 100%;
+	position: relative;
+}
+
+.page{
+	height: 100%;
+	position: relative;
+}

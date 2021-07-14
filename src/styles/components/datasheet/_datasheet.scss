@@ -1,0 +1,52 @@
+.datasheet{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	flex: 1;
+	overflow-y: hidden;
+}
+.datasheet-menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+	position: relative;
+	position: sticky;
+}
+.datasheet-list{
+	position: relative;
+	padding: 0 8px;
+	margin-top: 8px;
+	overflow-y: auto;
+	flex: 1;
+}
+.datasheet-text{
+	font-size: 1rem;
+	font-family: 'SourceSansPro';
+	padding-bottom: 8px;
+}
+.datasheet-section{
+	margin-bottom: 16px;
+}
+.datasheet-section-headline{
+	padding: 8px;
+	padding-bottom: 0;
+	font-size: 1.15rem;
+	font-family: 'SourceSansPro';
+	font-weight: bold;
+	color: $black;
+	background-color: $white;
+}
+.datasheet-section-items{
+	padding: 8px;
+	background-color: $white;
+}
+.datasheet-saveing{
+	width: 100%;
+	height: 100%;
+	background-color: $buttonBackground;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}

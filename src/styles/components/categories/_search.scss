@@ -1,0 +1,42 @@
+.search{
+	flex: 2;	
+	display: flex;
+	position: relative;
+}
+.search-input{
+	box-shadow: none;
+	border-radius: none;
+	border: 1px solid $grey;
+	font-size: 1rem;
+	font-family: 'SourceSansPro';
+	padding: 8px;
+	flex: 1;
+	position: relative;
+	&:placeholder{
+		color: $grey;
+		font-family: 'SourceSansPro';
+		opacity: 1;
+	}
+	&:placeholder-shown{
+		padding-left: 28px;
+		+.search-icon{
+			display: inline;
+		}
+	}
+	&.select{
+		width: 308px;
+	}
+	&:focus{
+		border: 1px solid $buttonBackground;
+		outline: 1px solid $buttonBackground;
+	}
+}
+.search-icon{
+	left: 8px;
+	top: 10px;
+	display: none;
+	position: absolute;
+	.texticon{
+		color: $grey;
+	}
+}

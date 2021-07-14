@@ -1,0 +1,16 @@
+.select{
+	&.mod-empty{
+		.input{
+			color: $grey;
+		}
+	}
+	
+	.select-additional {
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+}
+
+
+
+

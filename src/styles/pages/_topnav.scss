@@ -1,0 +1,18 @@
+.topbar nav {
+    position: relative;
+    height: 100%;
+    flex: 2;
+    ul{
+        position: relative; 
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        li{
+           position: relative;
+           height: 100%;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        display: none;
+   }
+}

@@ -1,0 +1,10 @@
+.datasheetdays{
+	display: flex;
+	flex-wrap: wrap;
+	width: 75%;
+	padding-left: 8px;
+	.checkbox{
+		margin-right: 8px;
+		margin-bottom: 8px;
+	}
+}

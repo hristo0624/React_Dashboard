@@ -1,0 +1,78 @@
+.category{
+	width: 384px;
+	height: 100%;
+	margin-right: 16px;
+	overflow: hidden;
+	background: $screenBackground;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	&.active{
+			
+	}
+	&:hover{
+		
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+	@media screen and (max-width: 1200px) {
+        &.active{
+			.category-header{
+				background: $buttonBackground;
+			}		
+		}
+   	}
+}
+.category-spacer{
+	max-width: 16px;
+	flex: 0 0 16px;
+	position: relative;
+}
+
+.category-header{
+	background: $buttonBackground;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	color: $white;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	padding: 8px;
+	position: relative;
+	position: sticky;
+}
+
+.category-loader{
+	padding: 8px;
+	font-size: 1.25rem;
+}
+
+.category-menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+	position: relative;
+	position: sticky;
+}
+
+.category-drag{
+	cursor: grab;
+}
+
+.category-list{
+	position: relative;
+	padding: 8px;
+	overflow-y: auto;
+	flex: 1;
+}
+
+.category-list-entry{
+	background-color: $white;
+	@include shadow;
+	margin-bottom: 8px;
+	padding: 8px;
+	display: block;
+	overflow-x: hidden;
+}
+

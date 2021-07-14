@@ -1,0 +1,44 @@
+.input-wrapper{
+	flex: 1;
+	position: relative;
+}
+.input{
+	width: 100%;
+	padding: 8px;
+	font-size: 1rem;
+	font-family: 'SourceSansPro';
+	position: relative;
+	box-shadow: none;
+	border-radius: none;
+	border: 1px solid $grey;
+	&:placeholder{
+		color: $grey;
+		font-family: 'SourceSansPro';
+		opacity: 1;
+	}
+	&.mod-icon:placeholder-shown{
+		padding-left: 28px;
+		+.input-icon{
+			display: inline;
+		}
+	}
+	&:focus{
+		border: 1px solid $buttonBackground;
+		outline: 1px solid $buttonBackground;
+	}
+	&.mod-invalid{
+		border-color: $red;
+		&:focus{
+			outline: $red;
+		}
+	}
+}
+.input-icon{
+	left: 8px;
+	top: 10px;
+	display: none;
+	position: absolute;
+	.texticon{
+		color: $grey;
+	}
+}

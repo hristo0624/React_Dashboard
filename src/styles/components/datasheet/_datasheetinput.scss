@@ -1,0 +1,22 @@
+.datasheetinput{
+	flex: 1;
+	padding: 8px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	font-size: 1rem;
+	font-family: 'SourceSansPro';
+	position: relative;
+	&::placeholder{
+		color: $grey;
+		font-family: 'SourceSansPro';
+	}
+	&.select{
+		width: 348px;
+	}
+}
+.datasheetinput-label{
+	color: $grey;
+	font-size: 0.75rem;
+	display: block;
+	padding-left: 8px;
+}

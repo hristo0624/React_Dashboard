@@ -1,0 +1,28 @@
+.infocard{
+	position: relative;
+	width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+	.item{
+		width: 50%;	
+		padding-right: 8px;
+		padding-bottom: 0;
+		.textproperty{
+			white-space: nowrap; 
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
+.infocard-button{
+	padding-top: 8px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	.button{
+		height: 32px;
+	}
+	&.mod-editable{
+		justify-content: space-between;
+	}
+}

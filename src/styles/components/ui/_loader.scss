@@ -1,0 +1,17 @@
+.loader{
+	width: 100%;
+	height: 100%;
+	background-color: $buttonBackground;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+
+	.loader-text{
+		color: $white;
+		font-family: SourceSansPro, Arial, sans-serif;
+		font-size: 1.25rem;
+	}
+}
